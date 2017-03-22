@@ -83,15 +83,15 @@
         if (err.status === 403) {
           vm.errors.invalidLogin = true;
           var loginError = $mdToast.simple();
-          loginError.position("bottom left");
+          loginError.position("top right");
           loginError.textContent("Invalid email or password");
           loginError.hideDelay(500);
-          loginError.parent($element.find("form"));
+          loginError.parent($element.parent().parent());
           $mdToast.show(loginError);
         } else {
           vm.errors.unknownError = true;
           var generalError = $mdToast.simple();
-          generalError.position("bottom left");
+          generalError.position("top right");
           generalError.textContent("Unknown error has occured. Contact site administrator");
           generalError.hideDelay(500);
           generalError.parent($element.find("form"));

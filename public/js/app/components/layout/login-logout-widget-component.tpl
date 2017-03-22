@@ -25,6 +25,7 @@
              placeholder="email"
              type="text">
     </md-input-container>
+    <br>
     <md-input-container class="password-field" ng-if="$ctrl.formOpen">
       <input id="password-field"
              ng-keydown="$ctrl.resetErrors()"
@@ -32,6 +33,7 @@
              placeholder="password" 
              type="password">
     </md-input-container>
+    <br>
     <md-button ng-if="$ctrl.formOpen" class="button md-primary md-raised" type="submit">Login</md-button>
 
     <md-button ng-if="$ctrl.formOpen" class="button md-primary md-raised" ng-click="$ctrl.cancelLogin()"

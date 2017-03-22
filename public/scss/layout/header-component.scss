@@ -3,10 +3,17 @@
   padding: 10px;
   position: relative;
   margin-bottom: 10px;
+  //height: 210px;
 }
 
 .logo {
   float: left;
+  font-family: 'Faster One', cursive;
+  font-size: 1.2em;
+  h1 {
+    margin-left: 20px;
+    margin-top: 0;
+  }
 }
 
 .login-logout-widget {
@@ -18,8 +25,10 @@
   width: 40px;
   height: 18px;
   &.expanded {
-    width: 630px;
-    height: 60px;
+    // width: 630px;
+    // height: 60px;
+    width: 215px;
+    height: 190px;
   }
   &.logged-in {
     width: 350px;
@@ -27,6 +36,12 @@
   }
   form {
     height: 60px;
+    .email-field {
+      margin-bottom: 0;
+    }
+    .password-field {
+      margin-top: 0;
+    }
     .button {
       position: relative;
       top: -15px;
@@ -46,15 +61,6 @@
 
 .login-link.ng-leave, .email-field.ng-leave, .password-field.ng-leave, .login-form .button.ng-leave {
   transition: none;
-}
-
-.dev-only {
-  border: 1px solid black;
-  position: absolute;
-  left: 30px;
-  top: 80px;
-  width: 250px;
-  padding: 10px;
 }
 
 .nav {
@@ -83,4 +89,13 @@
       }
     }
   }
+}
+
+.dev-only {
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  width: 250px;
+  padding: 10px;
 }

@@ -40,7 +40,7 @@
 
 <div class="clearfix"></div>
 
-<pre class="dev-only">
+<pre class="dev-only md-whiteframe-4dp md-accent">
 Development testing data
 Admin user: msemko@gmail.com
 Password:   warcraft
